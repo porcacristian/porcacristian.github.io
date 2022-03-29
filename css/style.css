@@ -430,7 +430,16 @@ p span{
     opacity: 1;
 }
 
-
+h1 span{
+    transition: .5s linear;
+}
+h1:hover span{
+    
+    text-shadow:
+    0 0 12px #fff,    
+    0 0 16px #fff;
+    letter-spacing: 10px;
+}
 
 
 @media (max-width:768px){
