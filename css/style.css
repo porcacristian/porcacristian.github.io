@@ -436,8 +436,10 @@ h1 span{
 h1:hover span{
     
     text-shadow:
-    0 0 12px #fff,    
-    0 0 16px #fff;
+    0 0 12px #800080,    
+    0 0 12px #800080,
+    0 0 12px #800080,
+    0 0 12px #800080;
     letter-spacing: 10px;
 }
 
