@@ -1,5 +1,5 @@
 *{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;    
 }
 
 body{
@@ -146,4 +146,8 @@ div .productos{
     content: "Proximamente";
     z-index: 15; 
     height: 60px;   
+}
+
+#iframeComunidad{
+    height: 400px;    
 }
