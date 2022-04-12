@@ -1,137 +1,204 @@
 *{
-    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;    
 }
 
 body{
-    font-family: 'Nunito', sans-serif;
-    min-height: 100%;
     background-image: linear-gradient(#350a3d, #17202a );
-    background-attachment: fixed;
-    color:  #ecf0f1;
+    background-attachment: fixed;   
     
 }
 
-.grid-container > *{
-    box-shadow: -1px 1px 7px 0px rgba(0,0,0,.75);
-    border: 4px;
-    padding: 10px;  
-    border-radius: 5px;  
-}
-.grid-container{
-    width: 80%;  
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr; 
-    grid-template-rows: repeat(3,auto);          
-    margin: 20px auto;
-}
+/*=======================================================HEADER=======================================================*/
 
-
-.grid-container .header{
-    grid-column: 1/-1;
-    width: 100%;
-}
-
-.grid-container section{
-    grid-column: 1/-1;    
-}
-
-
-header{
+#containerNav{
     display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    width: max-content  ;  
+    justify-content: space-around;
 }
 
-.header .logo{
-    width: 8rem;
+#navBar a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-align: center;
 }
 
-.header a{
-    text-decoration: none;
-    color: #ecf0f1;
-    padding: 0.9375rem;
-    font-size: 1.125rem;
+#navBar img{
+    width: 150px;
+}
+
+
+#botonNavegador{    
+    background-color: #350a3d;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+/*=======================================================INDEX=======================================================*/
+
+.h1Principal{
+    color: #f1f1f1;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+#imgMain img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+#textoMain p{
+    color: #f1f1f1;    
+    font-weight: bold;
     
 }
-
-.header a :hover{    
-    color: #c5c7c7;    
+#textoMain p a{    
+    color: #f1f1f1;
 }
 
-
-.img-principal h1{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.textoprincipal p{
-    font-size: 1.125rem;
-}
-.textoprincipal p a{
-    color: #ecf0f1;   
-}
-.h3Index{
+/*=======================================================FOOTER=======================================================*/
+#h3Redes{
+    color: #f1f1f1;
     text-align: center;
 }
-.img-principal img{
-    width: 100%;
-    border-radius: 5px;   
-}
 
-
-.footer{        
+#redes li{
     text-align: center;
-    font-size: 20;    
+    list-style: none;    
+    font-size: 30px;
 }
 
-.footer h3{     
-    font-size: 1.5rem;    
-}
-
-.footer ul{
+#redes{
     display: flex;
     justify-content: center;
-    padding: 20px;    
+    
 }
 
-.footer ul li{
-    list-style: none;
-    font-size: 30px;
-    padding: 10px;
-    color: #ecf0f1;
+#redes li a{
+    color: #f1f1f1;
+    margin: 20px;
 }
 
-
-.footer ul li a{
-    color: #ecf0f1;
-}
-
-
-
-
-/* CONTACTO */
-
-.content{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5rem;
-}
-
-.contactame{
+#copyrigth{
+    font-size: 20px;
+    color: #f1f1f1;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
 }
-.contact-form form >div{
-    margin-top: 1.5625rem;
+
+/*=======================================================SOBRE MI HTML=======================================================*/
+
+#textoSobreMi{
+    color: #f1f1f1;
 }
+
+#textoSobreMi a{
+    color: #f1f1f1;
+}
+
+#iframeYoutube{
+    width: 100%;
+    height: 25rem;
+}
+
+
+
+/*=======================================================Modificando Productos.HTML=======================================================*/
+
+div .productos{
+    border: 3px solid #350a3d;
+    box-shadow: 1px 1px 10px 1px #350a3d;
+    background-image: linear-gradient(#d71ff7, #17202a );    
+}
+
+.botonComprar{
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    color: #f1f1f1;
+    font-size: 20px;
+    background-image: linear-gradient(#350a3d, #131517 );
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;    
+    position: relative;
+    overflow: hidden;
+}
+
+.botonComprar span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.botonComprar::after{
+    content: "";
+    width: 100%;
+    height: 80px;
+    background-color: #4c024f;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+.botonComprar:hover::after{
+    top: 1px;
+    content: "Proximamente";
+    z-index: 15; 
+    height: 60px;   
+}
+
+
+
+
+
+
+/*======================================================= ANIMACION DE LA GALERIA COMUNIDAD======================================================= */
+#iframeComunidad{
+    height: 400px;    
+}
+
+
+.imgContenedor{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContenedor::before{
+    content: "Panza Army";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #350a3d7c;
+    transform: translate(100%);
+    transition: transform .4s;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight:600;
+}
+
+.imgContenedor:hover::before{
+    transform: translate(0) rotate(360deg);
+}
+
+
+/*======================================================= CONTACTO HTML======================================================= */
 
 .contact-wrapper{
-    box-shadow: 0 0 20px 0 rgba(255,255,255, .3);
+    box-shadow: 0 0 20px 0 #4c024fcd;
 }
 
 .contact-wrapper > * {
@@ -215,220 +282,28 @@ header{
     animation-duration: 2s;
 }
 
-/*large screen contacto*/
-
-@media (min-width:700px){
-    .contact-wrapper{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        
-    }
-    .contact-wrapper >*{
-        padding: 2rem;
-    }
-    .contact-info h4,
-    .contact-info ul{
-        padding: 2rem;
-    }
-
-    .contact-info img{
-        width: 100%;
-    }
-}
-
-.gallery-img{
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-} 
-
-.gallery-img::before{
-    content: "Panza Army";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f371;
-    transform: scale(0) ;
-    transition: transform .4s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-
-} 
-
-.gallery-img:hover::before{    
-    transform: scale(1) rotate(360deg) ;
-
-} 
 
 
-
-
-.h1Comunidad{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.textoComunidad{
-    text-align: center;
-    font-size: 1.125rem;
+#navegador li .nav-link:hover{
+    color: #4c024f;    
 }
 
 
-.gallery{
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: .8rem;   
-}
-
-.gallery-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 0.3125rem;
-    border: 1px solid #17202a;   
-}
 
 
-.section p{
-    text-align: center;
-    color: #ecf0f1;
-    font-size: 1.25rem;
-}
-.section p a{
-    color: #ecf0f1;
+header{
+    box-shadow: 0 0 10px 0 #000000e8;
 }
 
-.section div.iframe{
-    display: flex;  
-    justify-content: center;
-    padding-top: 0.9375rem;
-    padding-bottom: 0.9375rem;  
+main{
+    box-shadow: 0 0 10px 0 #000000e8;
 }
 
-.section iframe{
-    width: 21.875rem;
-    height: 25rem;     
+footer{
+    box-shadow: 0 0 10px 0 #000000e8;
 }
 
 
-.container__sobreMi{
-    display: grid;
-    grid-template-columns: 1fr 1fr;    
-    
-}
-
-#h1sobreMi{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.textoSobreMi{  
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 10   0px;
-}
-.textoSobreMi h3{
-    font-size: 2rem;
-}
-
-.textoSobreMi p{
-    text-align: left;
-    color: #ecf0f1;
-    font-size: 1.25rem;
-}
-
-p span{
-    font-weight: 600;
-}
-
-.video-sobremi iframe{
-    width: 100%;
-    border-radius: 5px;   
-}
-
-.video-sobremi h3{
-    padding-bottom: 10px;
-    
-}
-
-.video-sobremi a{
-    color: #ecf0f1;
-    font-size: 18px;
-}
-.productosFlex
-{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px 0 20px 0;
-}
-
-.section h1{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1.25rem;
-}
-
-.productos{
-    display: grid;    
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1.25rem;
-}
-
-
-.card-body{
-    background-image: linear-gradient(#753081, #17202a );
-    background-attachment: fixed;
-    background-size: cover;    
-}
-
-.card-body h5,
-.card-body p{
-    color: #ecf0f1;    
-}
-
-
-.productosFlex h5{
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-.productosFlex p{
-    font-size: 18px;
-}
-
-.productos a{
-    background-color: #560564;
-    border-radius: 5px;
-    outline: none;
-    border: none;   
-}
-
-
-.btn::before{
-    content: "Buy now!";   
-    position: absolute;    
-}
-
-.btn::after{
-    content: "Sold Out";       
-    opacity: 0;
-}
-
-.btn:hover::before{    
-    opacity: 0;
-}
-
-.btn:hover::after{    
-    opacity: 1;
-}
 
 h1 span{
     transition: .5s linear;
@@ -442,123 +317,3 @@ h1:hover span{
     0 0 12px #800080;
     letter-spacing: 10px;
 }
-
-
-@media (max-width:768px){
-
-    .grid-container{
-        width: 100%;
-    }
-    
-    .header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        
-        height: calc(100% - 2rem);
-    }
-    
-    .header .logo{
-        width: 8rem;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .header a{
-        display: flex;
-        flex-direction: column;        
-        text-align: center;
-        font-size: 1.50rem;
-    }
-    
-        
-
-
-    /*Sobre Mi*/
-    
-    .container__sobreMi{
-        grid-template-columns: 1fr;
-    }
-    .textoSobreMi{
-        margin-bottom: 20px;
-        font-size: 1rem;
-        text-align: left;
-    }
-
-
-
-
-    /*GALERIA*/
-
-    .h1Comunidad{
-        font-size: 3rem;
-        padding: .8em 0 .4em;
-    }
-    .gallery-img::before{
-        font-size: 1rem;
-    }
-
-    .gallery{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "img1 img1"
-        "img2 img3"
-        "img4 img4"
-        "img5 img6"
-        "img7 img7"
-        "img8 img9";
-    }
-
-    .gallery-img-1{
-        grid-area: img1;
-    }
-    .gallery-img-2{
-        grid-area: img2;
-    }
-
-    .gallery-img-3{
-        grid-area: img3;
-    }
-
-    .gallery-img-4{
-        grid-area: img4;
-    }
-
-    .gallery-img-5{
-        grid-area: img5;
-    }
-
-    .gallery-img-6{
-        grid-area: img6;
-    }
-
-    .gallery-img-7{
-        grid-area: img7;
-    }
-
-    .gallery-img-8{
-        grid-area: img8;
-    }
-
-    .gallery-img-9{
-        grid-area: img9;
-    }
-
-    /*PRODUCTOS*/
-
-    .h1Productos{
-        font-size: 3rem;
-        padding: .8em 0 .4em;
-    }
-    .productos{
-        grid-template-columns: 1fr;       
-    }   
-
-
-}
-
-
-
-
-
