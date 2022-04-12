@@ -8,6 +8,8 @@ body{
     
 }
 
+/*=======================================================HEADER=======================================================*/
+
 #containerNav{
     display: flex;
     justify-content: space-around;
@@ -31,6 +33,7 @@ body{
     outline: none;
 }
 
+/*=======================================================INDEX=======================================================*/
 
 .h1Principal{
     color: #f1f1f1;
@@ -55,7 +58,7 @@ body{
     color: #f1f1f1;
 }
 
-
+/*=======================================================FOOTER=======================================================*/
 #h3Redes{
     color: #f1f1f1;
     text-align: center;
@@ -84,6 +87,8 @@ body{
     text-align: center;
 }
 
+/*=======================================================SOBRE MI HTML=======================================================*/
+
 #textoSobreMi{
     color: #f1f1f1;
 }
@@ -97,6 +102,9 @@ body{
     height: 25rem;
 }
 
+
+
+/*=======================================================Modificando Productos.HTML=======================================================*/
 
 div .productos{
     border: 3px solid #350a3d;
@@ -148,6 +156,40 @@ div .productos{
     height: 60px;   
 }
 
+
+
+
+
+
+/*======================================================= ANIMACION DE LA GALERIA COMUNIDAD======================================================= */
 #iframeComunidad{
     height: 400px;    
+}
+
+
+.imgContenedor{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContenedor::before{
+    content: "Panza Army";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #350a3d7c;
+    transform: translate(100%);
+    transition: transform .4s;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight:600;
+}
+
+.imgContenedor:hover::before{
+    transform: translate(0) rotate(360deg);
 }
