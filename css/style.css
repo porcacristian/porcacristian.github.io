@@ -8,17 +8,32 @@ body{
     
 }
 
-
+#containerNav{
+    display: flex;
+    justify-content: space-around;
+}
 
 #navBar a{
     font-size: 20px;
     font-weight: bold;
+    color: #f1f1f1;
+    text-align: center;
 }
 
 #navBar img{
     width: 150px;
 }
 
+#navegador{
+    
+   
+}
+
+#botonNavegador{    
+    background-color: #350a3d;
+    border: 1px solid #000000;
+    outline: none;
+}
 
 
 .h1Principal{
