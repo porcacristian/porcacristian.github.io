@@ -287,3 +287,18 @@ div .productos{
 #navegador li .nav-link:hover{
     color: #4c024f;    
 }
+
+
+
+
+header{
+    box-shadow: 0 0 10px 0 #000000e8;
+}
+
+main{
+    box-shadow: 0 0 10px 0 #000000e8;
+}
+
+footer{
+    box-shadow: 0 0 10px 0 #000000e8;
+}
