@@ -193,3 +193,97 @@ div .productos{
 .imgContenedor:hover::before{
     transform: translate(0) rotate(360deg);
 }
+
+
+/*======================================================= CONTACTO HTML======================================================= */
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 #4c024fcd;
+}
+
+.contact-wrapper > * {
+    padding: 1rem;    
+}
+
+.contact-form{
+    background:#350a3d7a ;
+    color: #ecf0f1;
+}
+
+.contact-info{
+    background: #350a3d00;
+    color: #ecf0f1;
+}
+
+.contact-form form div{
+    margin: 0;
+    padding: 1rem;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1/-1;
+}
+
+
+.contact-form form textarea{
+    resize: none;
+}
+.contact-wrapper ul li{
+    list-style: none;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding:.8rem;    
+    border: none;
+    background:none;
+    border-bottom: 1px solid #560564;
+    outline: none;
+    color: #ecf0f1;
+}
+
+
+.contact-form form button{
+    background-color: #560564;
+    border: none;
+    margin-top: .8rem;
+    outline: none;   
+    text-transform: uppercase;
+    padding: 1rem; 
+}
+
+.contact-form form button:hover{
+    transition: ease .3s;
+    color: #ecf0f1;
+    background-color: #5605645d;    
+}
+
+.contact-info h4,
+.contact-info ul{
+    text-align: center;
+}
+
+.contact-info img{
+    width: 60%;
+}
+.contact-info li{
+    padding: .2rem;
+}
+
+.contact-wrapper{
+    animation: bounceIn; 
+    animation-duration: 2s;
+}
+
+
+
+#navegador li .nav-link:hover{
+    color: #4c024f;    
+}
