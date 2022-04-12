@@ -96,3 +96,54 @@ body{
     width: 100%;
     height: 25rem;
 }
+
+
+div .productos{
+    border: 3px solid #350a3d;
+    box-shadow: 1px 1px 10px 1px #350a3d;
+    background-image: linear-gradient(#d71ff7, #17202a );    
+}
+
+.botonComprar{
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    color: #f1f1f1;
+    font-size: 20px;
+    background-image: linear-gradient(#350a3d, #131517 );
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;    
+    position: relative;
+    overflow: hidden;
+}
+
+.botonComprar span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+
+.botonComprar::after{
+    content: "";
+    width: 100%;
+    height: 80px;
+    background-color: #4c024f;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+.botonComprar:hover::after{
+    top: 1px;
+    content: "Proximamente";
+    z-index: 15; 
+    height: 60px;   
+}
