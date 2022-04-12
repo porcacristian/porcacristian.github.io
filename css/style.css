@@ -302,3 +302,18 @@ main{
 footer{
     box-shadow: 0 0 10px 0 #000000e8;
 }
+
+
+
+h1 span{
+    transition: .5s linear;
+}
+h1:hover span{
+    
+    text-shadow:
+    0 0 12px #800080,    
+    0 0 12px #800080,
+    0 0 12px #800080,
+    0 0 12px #800080;
+    letter-spacing: 10px;
+}
