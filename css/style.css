@@ -24,10 +24,6 @@ body{
     width: 150px;
 }
 
-#navegador{
-    
-   
-}
 
 #botonNavegador{    
     background-color: #350a3d;
@@ -51,8 +47,7 @@ body{
 
 
 #textoMain p{
-    color: #f1f1f1;
-    font-size: 20px;
+    color: #f1f1f1;    
     font-weight: bold;
     
 }
@@ -87,4 +82,17 @@ body{
     font-size: 20px;
     color: #f1f1f1;
     text-align: center;
+}
+
+#textoSobreMi{
+    color: #f1f1f1;
+}
+
+#textoSobreMi a{
+    color: #f1f1f1;
+}
+
+#iframeYoutube{
+    width: 100%;
+    height: 25rem;
 }
