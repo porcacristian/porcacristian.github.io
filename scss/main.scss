@@ -1,0 +1,12 @@
+
+$texto-principal: #f1f1f1;
+
+@use "global";
+
+h1{
+    color: $texto-principal;
+}
+
+p{
+    color: $texto-principal;
+}
