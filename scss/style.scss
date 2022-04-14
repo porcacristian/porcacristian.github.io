@@ -1,0 +1,61 @@
+@import "/scss/components/global";
+
+
+$texto-principal: #f1f1f1;
+$font-h1: 3rem;
+$font-h2: 2.2rem;
+$font-h3: 1.9rem;
+$box-shadows: 0 0 10px 0 #000000e8;
+
+
+
+h1{
+    color: $texto-principal;
+}
+
+p{
+    color: $texto-principal;
+}
+
+#navBar{
+    ul{
+        li{
+            a{
+                color: $texto-principal;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+h1{
+    text-align: center;   
+    span{
+        font-size: $font-h1;
+        transition: .5s linear;
+        &:hover{
+            text-shadow:
+            0 0 12px #800080,    
+            0 0 12px #800080,
+            0 0 12px #800080,
+            0 0 12px #800080;
+            letter-spacing: 10px;
+        }
+    }
+} 
+    
+
+header{
+    box-shadow: $box-shadows;
+}
+
+main{
+    box-shadow: $box-shadows;
+}
+
+footer{
+    box-shadow: $box-shadows;
+}
+
+
