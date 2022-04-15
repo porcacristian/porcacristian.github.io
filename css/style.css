@@ -1,14 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#350a3d), to(#17202a));
   background-image: linear-gradient(#350a3d, #17202a);
+}
+
+nav img {
+  width: 9.375rem;
 }
 
 h1 {
@@ -28,30 +30,46 @@ p {
 h1 {
   text-align: center;
 }
-
 h1 span {
   font-size: 3rem;
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
+  transition: 0.5s linear;
 }
-
 h1 span:hover {
-  text-shadow: 0 0 12px #800080,     0 0 12px #800080, 0 0 12px #800080, 0 0 12px #800080;
+  text-shadow: 0 0 12px #800080, 0 0 12px #800080, 0 0 12px #800080, 0 0 12px #800080;
   letter-spacing: 10px;
 }
 
 header {
-  -webkit-box-shadow: 0 0 10px 0 #000000e8;
-          box-shadow: 0 0 10px 0 #000000e8;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9098039216);
 }
 
 main {
-  -webkit-box-shadow: 0 0 10px 0 #000000e8;
-          box-shadow: 0 0 10px 0 #000000e8;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9098039216);
 }
 
 footer {
-  -webkit-box-shadow: 0 0 10px 0 #000000e8;
-          box-shadow: 0 0 10px 0 #000000e8;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9098039216);
 }
+
+#imgMain img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#textoMain p {
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+#textoMain p a {
+  color: #f1f1f1;
+}
+
+#navBar a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

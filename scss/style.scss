@@ -1,10 +1,11 @@
-@import "/scss/components/global";
+@import "components/global";
 
 
 $texto-principal: #f1f1f1;
 $font-h1: 3rem;
 $font-h2: 2.2rem;
 $font-h3: 1.9rem;
+$font-p: 1.25rem;
 $box-shadows: 0 0 10px 0 #000000e8;
 
 
@@ -59,3 +60,29 @@ footer{
 }
 
 
+#imgMain img{
+    width: 100%;
+    border-radius: 5px;
+}
+#textoMain p{
+    color: $texto-principal;    
+    font-weight: bold;
+    
+}
+#textoMain{
+    p{
+        a{    
+            color: $texto-principal;
+        }
+    }
+}  
+
+
+#navBar{
+    a{
+        font-size: $font-p;
+        font-weight: bold;
+        color: $texto-principal;
+        text-align: center;
+    }    
+} 
