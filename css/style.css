@@ -72,4 +72,8 @@ footer {
   text-align: center;
 }
 
+#navegador li .nav-link:hover {
+  color: #4c024f;
+}
+
 /*# sourceMappingURL=style.css.map */

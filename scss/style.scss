@@ -7,7 +7,7 @@ $font-h2: 2.2rem;
 $font-h3: 1.9rem;
 $font-p: 1.25rem;
 $box-shadows: 0 0 10px 0 #000000e8;
-
+$color-pricnipal: #350a3d;
 
 
 h1{
@@ -85,4 +85,14 @@ footer{
         color: $texto-principal;
         text-align: center;
     }    
+} 
+
+#navegador{
+    li{
+        .nav-link{
+            &:hover{
+                color: #4c024f; 
+            } 
+        }
+    }
 } 

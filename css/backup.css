@@ -284,12 +284,12 @@ div .productos{
 
 
 
-#navegador li .nav-link:hover{
+/* #navegador li .nav-link:hover{
     color: #4c024f;    
-}
+} */
 
 
-header{
+/* header{
     box-shadow: 0 0 10px 0 #000000e8;
 }
 
@@ -301,10 +301,10 @@ footer{
     box-shadow: 0 0 10px 0 #000000e8;
 }
 
+ */
 
 
-
-
+/* 
 h1 span{
     transition: .5s linear;
 }
@@ -316,4 +316,4 @@ h1:hover span{
     0 0 12px #800080,
     0 0 12px #800080;
     letter-spacing: 10px;
-}
+} */
