@@ -1,0 +1,25 @@
+footer{
+    h3{
+        color: #f1f1f1;
+        text-align: center;
+    }
+    #copyrigth{
+        font-size: 20px;
+        color: #f1f1f1;
+        text-align: center;
+    }
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+    li{
+        text-align: center;
+        list-style: none;    
+        font-size: 30px;
+        a{
+            color: #f1f1f1;
+            margin: 20px;
+        }
+    }
+} 
