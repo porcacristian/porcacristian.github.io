@@ -47,7 +47,7 @@ h1 span {
 }
 h1 span:hover {
   text-shadow: 0 0 12px #800080, 0 0 12px #800080, 0 0 12px #800080, 0 0 12px #800080;
-  letter-spacing: 10px;
+  letter-spacing: 0.5rem;
 }
 
 p {
