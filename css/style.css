@@ -13,21 +13,32 @@ nav img {
   width: 9.375rem;
 }
 
-h1 {
+footer h3 {
   color: #f1f1f1;
+  text-align: center;
 }
-
-p {
-  color: #f1f1f1;
-}
-
-#navBar ul li a {
-  color: #f1f1f1;
+footer #copyrigth {
   font-size: 20px;
-  font-weight: bold;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+}
+#redes li {
+  text-align: center;
+  list-style: none;
+  font-size: 30px;
+}
+#redes li a {
+  color: #f1f1f1;
+  margin: 20px;
 }
 
 h1 {
+  color: #f1f1f1;
   text-align: center;
 }
 h1 span {
@@ -37,6 +48,10 @@ h1 span {
 h1 span:hover {
   text-shadow: 0 0 12px #800080, 0 0 12px #800080, 0 0 12px #800080, 0 0 12px #800080;
   letter-spacing: 10px;
+}
+
+p {
+  color: #f1f1f1;
 }
 
 header {
@@ -51,29 +66,210 @@ footer {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9098039216);
 }
 
-#imgMain img {
+/*=======================================================INDEX=======================================================*/
+main #imgMain img {
   width: 100%;
   border-radius: 5px;
 }
-
-#textoMain p {
+main #textoMain p {
   color: #f1f1f1;
   font-weight: bold;
 }
-
-#textoMain p a {
+main #textoMain p a {
   color: #f1f1f1;
 }
 
+/*=======================================================NAVEGADOR=======================================================*/
+#navBar #botonNavegador {
+  color: #350a3d;
+  background-color: #f1f1f1;
+}
 #navBar a {
   font-size: 1.25rem;
   font-weight: bold;
   color: #f1f1f1;
   text-align: center;
 }
-
-#navegador li .nav-link:hover {
+#navBar #navegador li .nav-link:hover {
   color: #4c024f;
+}
+
+/*======================================================= CONTACTO HTML======================================================= */
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(76, 2, 79, 0.8039215686);
+  animation: bounceIn;
+  animation-duration: 2s;
+}
+.contact-wrapper * {
+  padding: 1rem;
+}
+.contact-wrapper ul li {
+  list-style: none;
+}
+
+.contact-form {
+  background: rgba(53, 10, 61, 0.4784313725);
+  color: #f1f1f1;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form form div {
+  margin: 0;
+  padding: 1rem;
+}
+.contact-form form .block {
+  grid-column: 1/-1;
+}
+.contact-form form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #560564;
+  outline: none;
+  color: #f1f1f1;
+}
+.contact-form form button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #560564;
+  outline: none;
+  color: #f1f1f1;
+  background-color: #560564;
+  border: none;
+  margin-top: 0.8rem;
+  outline: none;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.contact-form form button:hover {
+  transition: ease 0.3s;
+  color: #f1f1f1;
+  background-color: rgba(86, 5, 100, 0.3647058824);
+}
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #560564;
+  outline: none;
+  color: #f1f1f1;
+  resize: none;
+}
+
+.contact-info {
+  background: rgba(53, 10, 61, 0);
+  color: #f1f1f1;
+  font-weight: bold;
+}
+.contact-info h4 {
+  text-align: center;
+}
+.contact-info ul {
+  text-align: center;
+}
+.contact-info img {
+  width: 100%;
+}
+.contact-info li {
+  padding: 0.2rem;
+}
+
+/*======================================================= ANIMACION DE LA GALERIA COMUNIDAD======================================================= */
+#iframeComunidad {
+  height: 25rem;
+}
+
+.imgContenedor {
+  position: relative;
+  overflow: hidden;
+}
+.imgContenedor::before {
+  content: "Panza Army";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(53, 10, 61, 0.4862745098);
+  transform: translate(100%);
+  transition: transform 0.4s;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.imgContenedor:hover::before {
+  transform: translate(0) rotate(360deg);
+}
+
+/*=======================================================Modificando Productos.HTML=======================================================*/
+div .productos {
+  border: 3px solid #350a3d;
+  box-shadow: 1px 1px 10px 1px #350a3d;
+  background-image: linear-gradient(#d71ff7, #17202a);
+}
+div .productos .botonComprar {
+  display: inline-flex;
+  width: 100%;
+  padding: 10px;
+  color: #f1f1f1;
+  font-size: 20px;
+  background-image: linear-gradient(#350a3d, #131517);
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  position: relative;
+  overflow: hidden;
+}
+div .productos .botonComprar span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+
+.botonComprar::after {
+  content: "";
+  width: 100%;
+  height: 80px;
+  background-color: #4c024f;
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  transition: 0.3s ease-in-out all;
+}
+
+.botonComprar:hover::after {
+  top: 1px;
+  content: "Proximamente";
+  z-index: 15;
+  height: 60px;
+}
+
+/*=======================================================SOBRE MI HTML=======================================================*/
+#textoSobreMi {
+  color: #f1f1f1;
+}
+#textoSobreMi a {
+  color: #f1f1f1;
+}
+
+#iframeYoutube {
+  width: 100%;
+  height: 25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
