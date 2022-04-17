@@ -1,5 +1,5 @@
 # porcacristian.github.io
-<h1 align="center">¡Hola a todos! Cristian Porca</h1>
+<h1 align="center">¡Hola a todos! Soy Cristian Porca</h1>
 <h3 align="center">Esta es mi primer página web.</h3>
 <p>Sitio web creado para el curso de desarrollo web de CoderHouse.</p>
 <h3 align="left">Connect with me:</h3>
