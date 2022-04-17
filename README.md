@@ -1,7 +1,7 @@
 # porcacristian.github.io
 <h1 align="center">¡Hola a todos! Soy Cristian Porca</h1>
 <h3 align="center">Esta es mi primer página web.</h3>
-<p>Sitio web creado para el curso de desarrollo web de CoderHouse.</p>
+<p>Sitio web creado para el curso de desarrollo web de CoderHouse. La temática de este sitio fue basado en el streamer y jugador profesional de Playerunknown’s Battlegrounds, Rafael ''PIPAA'' Ruppel. </p>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/cristianporca96" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="cristianporca96" height="30" width="40" /></a>
