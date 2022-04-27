@@ -283,4 +283,8 @@ div.disclaimer {
   display: none;
 }
 
+.enabled + div {
+  visibility: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */

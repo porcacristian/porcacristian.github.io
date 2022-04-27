@@ -221,3 +221,7 @@ div.disclaimer{
     z-index: 0;
     display: none;
 }
+
+.enabled + div {
+    visibility: hidden;
+}
