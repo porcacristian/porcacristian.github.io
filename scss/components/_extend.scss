@@ -1,0 +1,11 @@
+@import "variables";
+%flexing{
+    display: flex;
+    justify-content: center;
+}
+
+
+%font{
+    color:$texto-principal;
+    font-weight: bold;
+}

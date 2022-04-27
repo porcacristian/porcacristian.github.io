@@ -1,16 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+#navBar #botonNavegador {
+  color: #350a3d;
+  background-color: #f1f1f1;
+}
+#navBar a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  text-align: center;
+}
+#navBar #navegador li .nav-link:hover {
+  color: #4c024f;
 }
 
-body {
-  background-image: linear-gradient(#350a3d, #17202a);
+#redes {
+  display: flex;
+  justify-content: center;
 }
 
-nav img {
-  width: 9.375rem;
+div .productos .botonComprar, .imgContenedor::before, .contact-info, main #textoMain p {
+  color: #f1f1f1;
+  font-weight: bold;
 }
 
 footer h3 {
@@ -24,10 +33,6 @@ footer #copyrigth {
   text-align: center;
 }
 
-#redes {
-  display: flex;
-  justify-content: center;
-}
 #redes li {
   text-align: center;
   list-style: none;
@@ -51,19 +56,29 @@ h1 span:hover {
   letter-spacing: 0.5rem;
 }
 
-/*=======================================================Header=======================================================*/
-#navBar #botonNavegador {
-  color: #350a3d;
-  background-color: #f1f1f1;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
-#navBar a {
-  font-size: 1.25rem;
-  font-weight: bold;
+
+body {
+  background-image: linear-gradient(#350a3d, #17202a);
+}
+
+nav img {
+  width: 9.375rem;
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+}
+
+div .productos .botonComprar, .imgContenedor::before, .contact-info, main #textoMain p {
   color: #f1f1f1;
-  text-align: center;
-}
-#navBar #navegador li .nav-link:hover {
-  color: #4c024f;
+  font-weight: bold;
 }
 
 p {
@@ -86,10 +101,6 @@ footer {
 main #imgMain img {
   width: 100%;
   border-radius: 5px;
-}
-main #textoMain p {
-  color: #f1f1f1;
-  font-weight: bold;
 }
 main #textoMain p a {
   color: #f1f1f1;
@@ -165,8 +176,6 @@ main #textoMain p a {
 
 .contact-info {
   background: rgba(53, 10, 61, 0);
-  color: #f1f1f1;
-  font-weight: bold;
 }
 .contact-info h4 {
   text-align: center;
@@ -200,12 +209,10 @@ main #textoMain p a {
   background-color: rgba(53, 10, 61, 0.4862745098);
   transform: translate(100%);
   transition: transform 0.4s;
-  color: #f1f1f1;
-  display: flex;
   align-items: center;
-  justify-content: center;
   font-size: 30px;
-  font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
 
 .imgContenedor:hover::before {
@@ -222,12 +229,10 @@ div .productos .botonComprar {
   display: inline-flex;
   width: 100%;
   padding: 10px;
-  color: #f1f1f1;
   font-size: 20px;
   background-image: linear-gradient(#350a3d, #131517);
   align-items: center;
   justify-content: center;
-  font-weight: bold;
   border: none;
   cursor: pointer;
   text-transform: uppercase;

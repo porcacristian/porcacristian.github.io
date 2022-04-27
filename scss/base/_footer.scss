@@ -1,6 +1,6 @@
 @import "../components/mapas";
 @import "../components/variables";
-
+@import "../components/extend";
 footer{
     h3{
         color: $texto-principal;
@@ -15,8 +15,7 @@ footer{
 }
 
 #redes{
-    display: flex;
-    justify-content: center;
+    @extend %flexing;
     li{
         text-align: center;
         list-style: none;    

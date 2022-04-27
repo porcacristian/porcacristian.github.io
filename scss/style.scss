@@ -1,10 +1,14 @@
-@use "components/global";
-@use "base/footer";
-@import "components/variables";
+@import "base/header";
+@import "base/footer";
 @import "base/h1";
+@import "components/global";
+@import "components/variables";
 @import "components/mixin";
 @import "components/mapas";
-@import "base/header";
+@import "components/extend";
+
+
+
 p{
     color: $texto-principal;
 }
@@ -32,8 +36,7 @@ main{
     } 
     #textoMain{
         p{
-            color: $texto-principal;    
-            font-weight: bold;
+            @extend %font;
             a{    
             color: $texto-principal;
             }
@@ -99,8 +102,7 @@ main{
 
 .contact-info{
     background: #350a3d00;
-    color: $texto-principal;
-    font-weight: bold;
+    @extend %font;
     h4{
         text-align: center;
     }
@@ -122,10 +124,11 @@ main{
     height: 25rem;    
 }
 
-.imgContenedor{
+.imgContenedor{    
     position: relative;
     overflow: hidden;
     &::before{
+    @extend %font;
     content: "Panza Army";
     position: absolute;
     top: 0;
@@ -134,13 +137,11 @@ main{
     right: 0;
     background-color: #350a3d7c;
     transform: translate(100%);
-    transition: transform .4s;
-    color: $texto-principal;
+    transition: transform .4s;       
+    align-items: center;    
+    font-size: 30px;    
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-weight:600;    
+    justify-content: center ;    
     }   
 }
 
@@ -159,15 +160,14 @@ div{
         box-shadow: 1px 1px 10px 1px $color-pricnipal;
         background-image: linear-gradient(#d71ff7, #17202a );  
         .botonComprar{
+            @extend %font;
             display: inline-flex;
             width: 100%;
-            padding: 10px;
-            color: $texto-principal;
+            padding: 10px;            
             font-size: 20px;
             background-image: linear-gradient(#350a3d, #131517 );
             align-items: center;
-            justify-content: center;
-            font-weight: bold;
+            justify-content: center;            
             border: none;
             cursor: pointer;
             text-transform: uppercase;
