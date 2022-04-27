@@ -1,0 +1,22 @@
+/*=======================================================Header=======================================================*/
+#navBar{
+    #botonNavegador{
+        color: $color-pricnipal;
+        background-color: $texto-principal;
+    }   
+    a{
+        font-size: $font-p;
+        font-weight: bold;
+        color: $texto-principal;
+        text-align: center;
+    } 
+    #navegador{
+        li{
+            .nav-link{
+                &:hover{
+                    color: #4c024f; 
+                } 
+            }
+        }
+    }
+} 

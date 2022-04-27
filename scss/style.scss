@@ -1,35 +1,10 @@
 @use "components/global";
-@use "components/footer";
-
-$texto-principal: #f1f1f1;
-$font-h1: 3rem;
-$font-h2: 2.2rem;
-$font-h3: 1.9rem;
-$font-p: 1.25rem;
-$box-shadows: 0 0 10px 0 #000000e8;
-$color-pricnipal: #350a3d;
-
-
-
-
-
-h1{ 
-    color: $texto-principal;
-    text-align: center;   
-    span{
-        font-size: $font-h1;
-        transition: .5s linear;
-        &:hover{
-            text-shadow:
-            0 0 12px #800080,    
-            0 0 12px #800080,
-            0 0 12px #800080,
-            0 0 12px #800080;
-            letter-spacing: 0.500rem;
-        }
-    }
-} 
-
+@use "base/footer";
+@import "components/variables";
+@import "base/h1";
+@import "components/mixin";
+@import "components/mapas";
+@import "base/header";
 p{
     color: $texto-principal;
 }
@@ -66,28 +41,6 @@ main{
     }  
 }
 
-/*=======================================================NAVEGADOR=======================================================*/
-#navBar{
-    #botonNavegador{
-        color: $color-pricnipal;
-        background-color: $texto-principal;
-    }   
-    a{
-        font-size: $font-p;
-        font-weight: bold;
-        color: $texto-principal;
-        text-align: center;
-    } 
-    #navegador{
-        li{
-            .nav-link{
-                &:hover{
-                    color: #4c024f; 
-                } 
-            }
-        }
-    }
-} 
 
 
 
@@ -106,18 +59,6 @@ main{
         }
     }
 }
-
-
-@mixin contancto_form(){
-    width: 100%;
-    padding:.8rem;    
-    border: none;
-    background:none;
-    border-bottom: 1px solid #560564;
-    outline: none;
-    color: $texto-principal;
-}
-
 
 .contact-form{
     background:#350a3d7a ;
@@ -194,7 +135,7 @@ main{
     background-color: #350a3d7c;
     transform: translate(100%);
     transition: transform .4s;
-    color: #f1f1f1;
+    color: $texto-principal;
     display: flex;
     align-items: center;
     justify-content: center;

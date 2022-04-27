@@ -1,0 +1,11 @@
+// Mixin de contacto
+
+@mixin contancto_form(){
+    width: 100%;
+    padding:.8rem;    
+    border: none;
+    background:none;
+    border-bottom: 1px solid #560564;
+    outline: none;
+    color: $texto-principal;
+}

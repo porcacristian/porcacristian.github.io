@@ -1,0 +1,19 @@
+@import "../components/mapas";
+
+
+h1{ 
+    color: $texto-principal;
+    text-align: center;   
+    span{
+        font-size: $h1;
+        transition: .5s linear;
+        &:hover{
+            text-shadow:
+            0 0 12px #800080,    
+            0 0 12px #800080,
+            0 0 12px #800080,
+            0 0 12px #800080;
+            letter-spacing: 0.500rem;
+        }
+    }
+} 

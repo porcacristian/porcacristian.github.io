@@ -1,11 +1,15 @@
+@import "../components/mapas";
+@import "../components/variables";
+
 footer{
     h3{
-        color: #f1f1f1;
+        color: $texto-principal;
         text-align: center;
+        font-size: $h3;
     }
     #copyrigth{
         font-size: 20px;
-        color: #f1f1f1;
+        color: $texto-principal;
         text-align: center;
     }
 }
@@ -18,7 +22,7 @@ footer{
         list-style: none;    
         font-size: 30px;
         a{
-            color: #f1f1f1;
+            color: $texto-principal;
             margin: 20px;
         }
     }

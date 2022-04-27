@@ -16,6 +16,7 @@ nav img {
 footer h3 {
   color: #f1f1f1;
   text-align: center;
+  font-size: 1.9rem;
 }
 footer #copyrigth {
   font-size: 20px;
@@ -50,6 +51,21 @@ h1 span:hover {
   letter-spacing: 0.5rem;
 }
 
+/*=======================================================Header=======================================================*/
+#navBar #botonNavegador {
+  color: #350a3d;
+  background-color: #f1f1f1;
+}
+#navBar a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  text-align: center;
+}
+#navBar #navegador li .nav-link:hover {
+  color: #4c024f;
+}
+
 p {
   color: #f1f1f1;
 }
@@ -77,21 +93,6 @@ main #textoMain p {
 }
 main #textoMain p a {
   color: #f1f1f1;
-}
-
-/*=======================================================NAVEGADOR=======================================================*/
-#navBar #botonNavegador {
-  color: #350a3d;
-  background-color: #f1f1f1;
-}
-#navBar a {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #f1f1f1;
-  text-align: center;
-}
-#navBar #navegador li .nav-link:hover {
-  color: #4c024f;
 }
 
 /*======================================================= CONTACTO HTML======================================================= */
