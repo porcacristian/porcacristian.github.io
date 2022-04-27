@@ -278,7 +278,7 @@ div .productos .botonComprar span {
   height: 25rem;
 }
 
-.disclaimer {
+div.disclaimer {
   z-index: 0;
   display: none;
 }
