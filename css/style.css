@@ -278,13 +278,9 @@ div .productos .botonComprar span {
   height: 25rem;
 }
 
-div.disclaimer {
-  z-index: 0;
-  display: none;
-}
-
-.enabled + div {
+.enabled + div.disclaimer {
   visibility: hidden;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
