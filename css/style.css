@@ -278,7 +278,7 @@ div .productos .botonComprar span {
   height: 25rem;
 }
 
-.enabled + div.disclaimer {
+#ultimo + div, .disclaimer {
   visibility: hidden;
   display: none;
 }
