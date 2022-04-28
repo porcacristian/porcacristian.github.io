@@ -74,6 +74,12 @@
             <p id="copyrigth">&copy; Todos los Derechos Reservados - 2022</p>
         </div>
     </footer>
-    <div id="ultimo"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            document.querySelectorAll('div')[document.querySelectorAll('div').length-1].setAttribute("style","display : none;")
+        })
+    </script>
+    
+
 </body>
 </html>

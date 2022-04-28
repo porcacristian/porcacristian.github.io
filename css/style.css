@@ -278,9 +278,6 @@ div .productos .botonComprar span {
   height: 25rem;
 }
 
-#ultimo + div, .disclaimer {
-  visibility: hidden;
-  display: none;
-}
+
 
 /*# sourceMappingURL=style.css.map */
