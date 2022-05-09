@@ -190,6 +190,11 @@ main #textoMain p a {
   padding: 0.2rem;
 }
 
+#button.disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
 /*======================================================= ANIMACION DE LA GALERIA COMUNIDAD======================================================= */
 #iframeComunidad {
   height: 25rem;
@@ -278,6 +283,9 @@ div .productos .botonComprar span {
   height: 25rem;
 }
 
-
+.enabled + div.disclaimer {
+  visibility: hidden;
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */

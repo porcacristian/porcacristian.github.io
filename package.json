@@ -2,7 +2,7 @@
   "name": "porcacristian.github.io-1",
   "version": "1.0.0",
   "description": "<h1 align=\"center\">¡Hola a todos! Soy Cristian Porca</h1>\r <h3 align=\"center\">Esta es mi primer página web.</h3>\r <p>Sitio web creado para el curso de desarrollo web de CoderHouse. La temática de este sitio fue basado en el streamer y jugador profesional de Playerunknown’s Battlegrounds, Rafael ''PIPAA'' Ruppel. </p>",
-    "scripts": {},
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/porcacristian/porcacristian.github.io.git"
@@ -12,5 +12,6 @@
   "bugs": {
     "url": "https://github.com/porcacristian/porcacristian.github.io/issues"
   },
-  "homepage": "https://github.com/porcacristian/porcacristian.github.io#readme"
+  "homepage": "https://github.com/porcacristian/porcacristian.github.io#readme",
+  "main": "index.js"
 }

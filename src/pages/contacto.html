@@ -59,26 +59,26 @@
                     <form action="">
                         <div class="formulario">
                             <label class="text-white" for="name">Nombre</label>
-                            <input id="name"type="text" required>
+                            <input id="name"type="text">
                         </div>
                         <div class="formulario">
                             <label class="text-white" for="email">Email</label>
-                            <input id="email" type="email" required>
+                            <input id="email" type="email">
                         </div>
                         <div class="formulario">
                             <label class="text-white" for="telefono">Teléfono</label>
-                            <input id="telefono" type="tel" required>
+                            <input id="telefono" type="tel">
                         </div>
                         <div class="formulario">
                             <label class="text-white" for="asunto">Asunto</label>
-                            <input id="asunto" type="text" required>
+                            <input id="asunto" type="text">
                         </div>
                         <div class="block">
                             <label class="text-white">Mensaje</label>
-                            <textarea name="mensaje" rows="3"></textarea>
+                            <textarea name="mensaje" rows="3" id="message"></textarea>
                         </div>
                         <p class="block">
-                            <button type="submit">Enviar</button>
+                            <button type="submit" id="button">Enviar</button>
                         </p>
                     </form>
                 </div>
@@ -116,6 +116,7 @@
             document.querySelectorAll('div')[document.querySelectorAll('div').length-1].setAttribute("style","display : none;")
         })
     </script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>
