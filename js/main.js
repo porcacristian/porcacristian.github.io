@@ -10,25 +10,20 @@ const email = document.querySelector('#email'),
 const er = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i;
 const erPhone = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
 
-
 eventListeners()
 function eventListeners(){
     document.addEventListener('DOMContentLoaded', startApp)
-
     email.addEventListener('blur',validateForm);
     names.addEventListener('blur',validateForm);
     affair.addEventListener('blur',validateForm);
     phone.addEventListener('blur',validateForm);
     message.addEventListener('blur',validateForm);
-
     form.addEventListener('submit', sendEmail)
 }
-
 
 function startApp(){
     buttonSubmit.classList.add('disabled');
 }
-
 
 function validateForm(e){
     const error = document.querySelector('p.error');
@@ -51,7 +46,7 @@ function validateForm(e){
             error.remove();
             }
             e.target.classList.remove('border', 'border-danger')
-            e.target.classList.add('border', 'border-success', 'border-3')
+            e.target.classList.add('border', 'border-success', 'border-3', 'my-2')
             }else{
             e.target.classList.add('border', 'border-danger')
             showError('El email no es valido')            
@@ -64,7 +59,7 @@ function validateForm(e){
             error.remove();
             }
             e.target.classList.remove('border', 'border-danger')
-            e.target.classList.add('border', 'border-success', 'border-3')
+            e.target.classList.add('border', 'border-success', 'border-3', 'my-2')
             }else{
             e.target.classList.add('border', 'border-danger')
             showError('El número de teléfono no es valido')            
